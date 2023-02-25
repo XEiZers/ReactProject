@@ -4,7 +4,7 @@ import {Navbar,Nav,FormControl,Container,Form,Button
 } from "react-bootstrap";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from "./logo192.png";
+import logo from "./logo.png";
 export default class App extends Component {
     render() {
         return (
