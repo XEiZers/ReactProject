@@ -21,10 +21,10 @@ export default class App extends Component {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav claccName="me-auto">
-                                <Nav.Link href="../Home"> Home</Nav.Link>
-                                <Nav.Link href="../About"> About us</Nav.Link>
-                                <Nav.Link href="../Contacts"> Contacts </Nav.Link>
-                                <Nav.Link href="../Blog"> Blog </Nav.Link>
+                                <Nav.Link href="/Pages/Home"> Home</Nav.Link>
+                                <Nav.Link href="/Pages/About"> About us</Nav.Link>
+                                <Nav.Link href="/Pages/Contacts"> Contacts </Nav.Link>
+                                <Nav.Link href="/Pages/Blog"> Blog </Nav.Link>
                             </Nav>
                             <Form className="d-flex">
                                 <FormControl
