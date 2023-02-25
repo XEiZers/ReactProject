@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
-import Tab, { Container } from 'react-bootstrap/Tab';
+import Tab from 'react-bootstrap/Tab';
+
 import {Col, Nav, Row} from "react-bootstrap";
 
 export class About extends Component {
     render() {
     return (
-        <Container>
+        <Tab>
+            {/* eslint-disable-next-line react/jsx-no-undef */}
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                 <Row>
                     <Col sm={3}>
@@ -53,7 +55,7 @@ export class About extends Component {
                     </Col>
                 </Row>
             </Tab.Container>
-        </Container>
+        </Tab>
     );
 }
 } export default About;
