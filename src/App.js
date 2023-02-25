@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-
 import {Navbar,Nav,FormControl,Container,Form,Button
 } from "react-bootstrap";
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from "/logo.svg";
-export default class App extends Component {
+
+import logo from "./logo192.png";
+export default class Header extends Component {
     render() {
         return (
             <>
