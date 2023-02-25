@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import {Navbar,Nav,FormControl,Container,Form,Button
 } from "react-bootstrap";
 
-import logo from "./logo192.png";
-export default class Header extends Component {
+import logo from "./logo192.jpg";
+export default class App extends Component {
     render() {
         return (
             <>
@@ -21,10 +21,10 @@ export default class Header extends Component {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav claccName="me-auto">
-                                <Nav.Link href="/"> Home
-                                </Nav.Link> <Nav.Link href="/about"> About us
-                            </Nav.Link> <Nav.Link href="/contacts"> Contacts </Nav.Link>
-                                <Nav.Link href="/blog"> Blog </Nav.Link>
+                                <Nav.Link href="../Home"> Home</Nav.Link>
+                                <Nav.Link href="../About"> About us</Nav.Link>
+                                <Nav.Link href="../Contacts"> Contacts </Nav.Link>
+                                <Nav.Link href="../Blog"> Blog </Nav.Link>
                             </Nav>
                             <Form className="d-flex">
                                 <FormControl
