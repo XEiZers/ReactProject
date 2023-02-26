@@ -6,10 +6,7 @@ import logo from "./logo192.jpg";
 import Blog from "./Pages/Blog";
 import Contacts from "./Pages/Contacts";
 import About from "./Pages/About";
-
-function Home() {
-    return null;
-}
+import Home from "./Pages/Home";
 
 export default class App extends Component {
     render() {

@@ -7,7 +7,6 @@ export class About extends Component {
     render() {
     return (
         <Tab>
-            {/* eslint-disable-next-line react/jsx-no-undef */}
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                 <Row>
                     <Col sm={3}>
