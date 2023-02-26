@@ -8,6 +8,7 @@ import Contacts from "./Pages/Contacts";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
 
+
 export default class App extends Component {
     render() {
         return (
