@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import {Navbar,Nav,FormControl,Container,Form,Button
-} from "react-bootstrap";
+import {Navbar,Nav,FormControl,Container,Form,Button} from "react-bootstrap";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import logo from "./logo192.jpg";
 import Blog from "./Pages/Blog";
 import Contacts from "./Pages/Contacts";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
-
 
 export default class App extends Component {
     render() {
