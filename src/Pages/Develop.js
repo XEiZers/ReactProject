@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Col, Row, Card, ListGroup } from "react-bootstrap";
 
-class Blog extends Component {
+class Develop extends Component {
     render() {
         return (
             <Container>
@@ -13,16 +13,15 @@ class Blog extends Component {
                                     width={150}
                                     height={150}
                                     className="mr-3"
-                                    src="https://www.makewonder.com/wp-content/uploads/sites/4/2021/01/coding-languages-image.jpeg"
+                                    src="https://emgotas.files.wordpress.com/2016/11/what-is-a-team.jpg"
                                     alt="photo" />
                             </div>
                             <div className="flex-grow-1 ms-3">
-                                <h5>Які мови програмування популярні в IT?</h5>
+                                <h5>Blog post</h5>
                                     <p>
-                                       Стаття про мови програмування
+                                       Lorem
                                     </p>
                             </div>
-                            <div><button>Open</button></div>
                         </div>
 
                         <div className="d-flex align-items-center m-5">
@@ -31,13 +30,13 @@ class Blog extends Component {
                                     width={150}
                                     height={150}
                                     className="mr-3"
-                                    src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?w=2000"
+                                    src="https://emgotas.files.wordpress.com/2016/11/what-is-a-team.jpg"
                                     alt="photo" />
                             </div>
                             <div className="flex-grow-1 ms-3">
-                                <h5>IT ринок 21-го століття</h5>
+                                <h5>Blog post</h5>
                                 <p>
-                                    Де та як шукати роботу?
+                                    Lorem
                                 </p>
                             </div>
                         </div>
@@ -85,4 +84,4 @@ class Blog extends Component {
     }
 }
 
-export default Blog;
+export default Develop;

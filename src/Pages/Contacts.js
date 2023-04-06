@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Button, Container, FormCheck, FormControl, FormGroup, FormLabel, FormText, Form } from 'react-bootstrap';
+import { Button, Container, FormCheck, FormControl, FormGroup, FormLabel, FormText, Form } from 'react-bootstrap'; 
 
 class Contacts extends Component {
     render() {

@@ -21,7 +21,7 @@ export default function Header(){
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
+    
     const [email, setEmail] = React.useState('')
     const [password, setPassword] = React.useState('')
     const [emailDirty, setEmailDirty] = React.useState( false)
@@ -62,7 +62,7 @@ export default function Header(){
                 break
         }
     }
-
+    
     React.useEffect ( () => {
         if (emailError || passwordError) {
             setFormValid(false)
@@ -70,20 +70,20 @@ export default function Header(){
             setFormValid(true)
         }
     },[emailError, passwordError])
+    
 
-
-    return (
-        <>
+        return (
+            <>
             <Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="/">
-                        <img
-                            src={logo}
-                            height="30"
-                            width="30"
-                            className="d-inline-block align-top"
-                            alt = "Logo"
-                        /> React Site
+                       <img
+                       src={logo}
+                       height="30"
+                       width="30"
+                       className="d-inline-block align-top"
+                       alt = "Logo"
+                       /> React Site
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -99,54 +99,54 @@ export default function Header(){
                                 placeholder="Search"
                                 className="me-sm-3"
                             />
-                            <Button variant="outline-info">Search</Button>
-                            <Button className="ms-2" onClick={handleShow}>Login</Button>
+                                <Button variant="outline-info">Search</Button>
+                                <Button className="ms-2" onClick={handleShow}>Login</Button>
                         </Form>
                     </Navbar.Collapse>
                 </Container>
-            </Navbar>
+                </Navbar>
+                
+                <Modal show={show} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Log in</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <Form>
+                            <Form.Group controlId="fromBasicEmail">
+                                <Form.Label>Email Address</Form.Label>
+                                {(emailDirty && emailError) && <div style={{color:"red"}}>{emailError}</div>}
+                                <Form.Control onChange={e => emailHandler(e)} name="email" value={email} onBlur={e => blurHandler(e)} type="email" placeholder="Enter email" />
+                                <Form.Text className="text-muted">
+                                    We'll never share your email with anyone else.
+                                </Form.Text>
+                            </Form.Group>
 
-            <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Log in</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <Form>
-                        <Form.Group controlId="fromBasicEmail">
-                            <Form.Label>Email Address</Form.Label>
-                            {(emailDirty && emailError) && <div style={{color:"red"}}>{emailError}</div>}
-                            <Form.Control onChange={e => emailHandler(e)} name="email" value={email} onBlur={e => blurHandler(e)} type="email" placeholder="Enter email" />
-                            <Form.Text className="text-muted">
-                                We'll never share your email with anyone else.
-                            </Form.Text>
-                        </Form.Group>
+                            <Form.Group controlId="fromBasicPassword">
+                                <Form.Label>Password</Form.Label>
+                                {(passwordError && passwordDirty) && <div style={{color:"red"}}>{passwordError}</div>}
+                                <Form.Control onChange={e => passwordHandler(e)} name="password" value={password} onBlur={e => blurHandler(e)} type="password" placeholder="Enter password">
+                                </Form.Control>
+                                            </Form.Group>
+                                            <Form.Group controlId="fromBasicCheckbox">
+                                <Form.Check type="checkbox" label="Remember me"/>
+                            </Form.Group>
 
-                        <Form.Group controlId="fromBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            {(passwordError && passwordDirty) && <div style={{color:"red"}}>{passwordError}</div>}
-                            <Form.Control onChange={e => passwordHandler(e)} name="password" value={password} onBlur={e => blurHandler(e)} type="password" placeholder="Enter password">
-                            </Form.Control>
-                        </Form.Group>
-                        <Form.Group controlId="fromBasicCheckbox">
-                            <Form.Check type="checkbox" label="Remember me"/>
-                        </Form.Group>
+                            <Button disabled={!formValid} variant="primary" type="submit">
+                                Submit
+                            </Button>
+                        </Form>
+                    </Modal.Body>
+                </Modal>
 
-                        <Button disabled={!formValid} variant="primary" type="submit">
-                            Submit
-                        </Button>
-                    </Form>
-                </Modal.Body>
-            </Modal>
-
-            <Router>
-                <Routes>
-                    <Route path="/" element={<Home  />}/>
-                    <Route path="/about" element={<About/>}/>
-                    <Route path="/contacts" element={<Contacts/>}/>
-                    <Route path="/blog" element={<Blog/>}/>
-                </Routes>
-            </Router>
-        </>
-    )
-}
+                <Router>
+                    <Routes>
+                        <Route path="/" element={<Home  />}/>
+                        <Route path="/about" element={<About/>}/>
+                        <Route path="/contacts" element={<Contacts/>}/>
+                        <Route path="/blog" element={<Blog/>}/>
+                    </Routes>
+                </Router>
+            </>
+        )
+    }
 
