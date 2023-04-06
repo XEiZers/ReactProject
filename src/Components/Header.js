@@ -13,7 +13,7 @@ import Contacts from '../Pages/Contacts';
 import About from '../Pages/About';
 import Blog from '../Pages/Blog';
 
-import logo from "./pics/logo.png";
+import logo from "./pics/logoD.png";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function Header(){
@@ -80,7 +80,7 @@ export default function Header(){
                        <img
                        src={logo}
                        height="30"
-                       width="30"
+                       width="50"
                        className="d-inline-block align-top"
                        alt = "Logo"
                        /> React Site

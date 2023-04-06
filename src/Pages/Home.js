@@ -17,7 +17,7 @@ class Home extends Component {
                     src="https://www.cyberark.com/wp-content/uploads/2019/11/Developer.jpg"
                         />
                     <Card.Body>
-                        <Card.Title>Розробники</Card.Title>
+                        <Card.Title>Developers</Card.Title>
                         <Card.Text>
                             Команда 1
                         </Card.Text>
@@ -32,7 +32,7 @@ class Home extends Component {
                     src="https://cdn.vox-cdn.com/thumbor/Ndb49Uk3hjiquS041NDD0tPDPAs=/0x169:1423x914/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/7342855/microsoftteams.0.jpg"
                 />
                 <Card.Body>
-                    <Card.Title>Дизайнери</Card.Title>
+                    <Card.Title>Природознавці</Card.Title>
                     <Card.Text>
                         Команда 2
                     </Card.Text>

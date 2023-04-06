@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Course from '../assets/Course.jpg';
+import Course from '../assets/course.png';
 import Developing from '../assets/developing.jpg';
 import ReactJS from '../assets/react.jpg';
 import { Carousel } from 'react-bootstrap';
