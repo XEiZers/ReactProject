@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {Navbar,Nav,FormControl,Container,Form,Button} from "react-bootstrap";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import logo from "./logo192.jpg";
+import logo from "./Components/pics/logo192.jpg";
 import Blog from "./Pages/Blog";
 import Contacts from "./Pages/Contacts";
 import About from "./Pages/About";
