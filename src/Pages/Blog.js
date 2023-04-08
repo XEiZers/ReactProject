@@ -5,6 +5,7 @@ class Blog extends Component {
     render() {
         return (
             <Container>
+                <h1>#</h1>
                 <Row>
                     <Col md="9">
                         <div className="d-flex align-items-center m-5">
