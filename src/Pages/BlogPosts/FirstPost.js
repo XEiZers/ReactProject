@@ -1,70 +1,46 @@
-import React from 'react';
-import { Tab, Container, Row, Col, Nav } from 'react-bootstrap';
+import React, {Component} from 'react';
+import {Tab, Container, Row, Col, Nav, Button, Card, ListGroup, Image} from 'react-bootstrap';
+import Blog1 from "../../assets/blog1.png";
+import Blog2 from "../../assets/blog2.jpg";
+import Blog3 from "../../assets/blog3.jpg";
 
-function FirstPost() {
-    return (
-        <Container>
-            <h1>#</h1>
-            <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-                <Row>
-                    <Col sm={3}>
-                        <Nav variant="pills" className="flex-column mt-2">
-                            <Nav.Item>
-                                <Nav.Link eventKey="first">Design</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="second">Team</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="third">Program</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="fourth">Frameworks</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="fifth">Library</Nav.Link>
-                            </Nav.Item>
-                        </Nav>
-                    </Col>
-                    <Col sm={9}>
-                        <Tab.Content>
-                            <Tab.Pane eventKey="first">
-                                <img className="d-block w-100" src="https://i.pinimg.com/originals/aa/f0/69/aaf069dc6de7618a63de784b70ad4370.jpg" alt="picture one"/>
-                                <p>
-                                    Lorem
-                                </p>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="second">
-                                <img className="d-block w-100" src="https://jstemplate.net/wp-content/uploads/2021/05/digiency-cover.jpg" alt="picture two"/>
-                                <p>
-                                    Lorem
-                                </p>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="third">
-                                <img className="d-block w-100" src="https://s3-alpha.figma.com/hub/file/858291939/14dda654-9bf1-47a5-ba66-904aa3003c6e-cover.png" alt="picture three"/>
-                                <p>
-                                    Lorem
-                                </p>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="fourth">
-                                <img className="d-block w-100" src="https://ichef.bbci.co.uk/news/999/cpsprodpb/15951/production/_117310488_16.jpg" alt="picture fourth"/>
-                                <p>
-                                    Lorem
-                                </p>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="fifth">
-                                <img className="d-block w-100" src="https://programminglibrarian.org/sites/default/files/partnerships_2.jpg" alt="picture fifth"/>
-                                <p>
-                                    Lorem
-                                </p>
-                            </Tab.Pane>
 
-                        </Tab.Content>
-                    </Col>
-                </Row>
-            </Tab.Container>
-        </Container>
-    );
-}
+class FirstPost extends Component {
+        render()
+        {
+            return (
+                <Container>
+                    <h1>#</h1>
+                    <h1 className="text-center m-4">Write your own post</h1>
+                    <Row>
+                        <Col md="5">
+                            <div className="d-flex align-items-center m-5">
+                                <div className="flex-shrink-0">
+                                    <img
+                                        width={400}
+                                        height={300}
+                                        className="mr-3"
+                                        src={Blog1}
+                                        alt="photo" />
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md="7">
+                            <h5 className="text-center mt-5">Writing your own post can be a daunting task, especially if you are not used to expressing your thoughts and ideas in writing. However, with a little guidance and practice, you can become a confident and effective writer.
 
+                                The first step in writing your own post is to choose a topic that interests you. It could be something you are knowledgeable about or something that you are passionate about. It is important to choose a topic that will engage your readers and keep them interested throughout the post.
+
+                                Once you have chosen a topic, the next step is to plan out your post. This involves outlining the main points you want to cover, organizing your thoughts and ideas, and deciding on the structure and flow of your post. A well-structured post is easy to read and keeps the reader engaged.
+
+                                When writing your post, it is important to keep in mind your target audience. Who are you writing for? What do they want to know? What tone and style should you use to engage them? These are all important questions to consider when writing your post.
+
+                                In terms of style, it is important to keep your writing clear and concise. Avoid using jargon or technical terms that your readers may not understand. Use simple language and short sentences to convey your ideas.</h5>
+                        </Col>
+                    </Row>
+                </Container>
+            );
+        }
+    }
 export default FirstPost;
+
+
