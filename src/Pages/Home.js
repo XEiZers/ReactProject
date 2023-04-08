@@ -21,10 +21,10 @@ class Home extends Component {
                         <Card.Text>
                             Команда 1
                         </Card.Text>
-                        <Button href='' variant="primary">About team</Button>
+                        <Button href="/developers" variant="primary">About team</Button>
                     </Card.Body>
                 </Card>
-</div>
+                </div>
                 <div className="col">
             <Card className="m-4 text-center" bg="light">
                 <Card.Img
@@ -32,11 +32,11 @@ class Home extends Component {
                     src="https://cdn.vox-cdn.com/thumbor/Ndb49Uk3hjiquS041NDD0tPDPAs=/0x169:1423x914/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/7342855/microsoftteams.0.jpg"
                 />
                 <Card.Body>
-                    <Card.Title>Природознавці</Card.Title>
+                    <Card.Title>Naturalists</Card.Title>
                     <Card.Text>
                         Команда 2
                     </Card.Text>
-                    <Button variant="primary">About team</Button>
+                    <Button href= "/naturalists" variant="primary">About team</Button>
                 </Card.Body>
             </Card>
                         </div>
@@ -48,11 +48,11 @@ class Home extends Component {
                     src="https://www.kv.by/sites/default/files/pictures/userpictures/2019/11/29/2359/foto6_1.jpg"
                 />
                 <Card.Body>
-                    <Card.Title>Маркетилоги</Card.Title>
+                    <Card.Title>Marketers</Card.Title>
                     <Card.Text>
                         Команда 3
                     </Card.Text>
-                    <Button variant="primary">About team</Button>
+                    <Button href= "/marketers" variant="primary">About team</Button>
                 </Card.Body>
             </Card>
             </div>

@@ -83,7 +83,7 @@ export default function Header(){
                        width="50"
                        className="d-inline-block align-top"
                        alt = "Logo"
-                       /> React Site
+                       /> X_EiZer Site
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -93,7 +93,7 @@ export default function Header(){
                             <Nav.Link href="/contacts"> Contacts </Nav.Link>
                             <Nav.Link href="/blog"> Blog </Nav.Link>
                         </Nav>
-                        <Form className="d-flex">
+                        <Form className="d-flex" >
                             <FormControl
                                 type ="text"
                                 placeholder="Search"

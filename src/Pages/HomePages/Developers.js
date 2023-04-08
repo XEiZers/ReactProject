@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {Container, Col, Row, Card, ListGroup, Button} from "react-bootstrap";
+import { Container, Col, Row, Card, ListGroup } from "react-bootstrap";
 
-class Blog extends Component {
+class Developers extends Component {
     render() {
         return (
             <Container>
@@ -19,11 +19,11 @@ class Blog extends Component {
                             </div>
                             <div className="flex-grow-1 ms-3">
                                 <h5>Blog post</h5>
-                                    <p>
-                                        Lorem
-                                    </p>
+                                <p>
+                                    Lorem
+                                </p>
                             </div>
-                            <Button href="/firstpost" variant="primary">Open</Button>
+                            <div><button>Open</button></div>
                         </div>
 
                         <div className="d-flex align-items-center m-5">
@@ -41,7 +41,6 @@ class Blog extends Component {
                                     Lorem
                                 </p>
                             </div>
-                            <Button href="/secondpost" variant="primary">Open</Button>
                         </div>
 
                         <div className="d-flex align-items-center m-5">
@@ -59,28 +58,27 @@ class Blog extends Component {
                                     Lorem
                                 </p>
                             </div>
-                            <Button href="/thirdpost" variant="primary">Open</Button>
                         </div>
                     </Col>
                     <Col md="3">
                         <h5 className="text-center mt-5">Категорії</h5>
-                            <Card>
-                                <ListGroup variant="flush">
-                                    <ListGroup.Item>категорія 1</ListGroup.Item>
-                                    <ListGroup.Item>категорія 2</ListGroup.Item>
-                                    <ListGroup.Item>категорія 3</ListGroup.Item>
-                                    <ListGroup.Item>категорія 4</ListGroup.Item>
-                                    <ListGroup.Item>категорія 5</ListGroup.Item>
-                                </ListGroup>
+                        <Card>
+                            <ListGroup variant="flush">
+                                <ListGroup.Item>категорія 1</ListGroup.Item>
+                                <ListGroup.Item>категорія 2</ListGroup.Item>
+                                <ListGroup.Item>категорія 3</ListGroup.Item>
+                                <ListGroup.Item>категорія 4</ListGroup.Item>
+                                <ListGroup.Item>категорія 5</ListGroup.Item>
+                            </ListGroup>
                         </Card>
                         <Card className="mt-3 bg-light">
-                        <Card.Body>
-                            <Card.Title>Slide widget</Card.Title>
-                            <Card.Text>
-                                Lorem
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
+                            <Card.Body>
+                                <Card.Title>Slide widget</Card.Title>
+                                <Card.Text>
+                                    Lorem
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
                     </Col>
                 </Row>
             </Container>
@@ -88,4 +86,4 @@ class Blog extends Component {
     }
 }
 
-export default Blog;
+export default Developers;
